@@ -1,17 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import {
-  HEADER_BORDER_HEIGHT,
-  BACKGROUND_SVG,
-  COLORS,
-} from '../styles/constants'
+import { HEADER_HEIGHT, BACKGROUND_SVG, COLORS } from '../styles/constants'
 
 import MeImage from './shared/MeImage'
 
 const StartContainer = styled.div`
   width: 100%;
-  height: calc(100vh - ${HEADER_BORDER_HEIGHT});
+  height: calc(100vh - ${HEADER_HEIGHT + 4}px);
   background-color: ${COLORS.darkGray};
   background-image: ${BACKGROUND_SVG};
   display: flex;

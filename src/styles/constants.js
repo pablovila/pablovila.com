@@ -48,8 +48,7 @@ export const BORDER_RADIUS = {
   card: '20px',
 }
 
-export const HEADER_HEIGHT = '72px'
-export const HEADER_BORDER_HEIGHT = '76px'
+export const HEADER_HEIGHT = 72
 
 export const BODY_WIDTH = '960px'
 

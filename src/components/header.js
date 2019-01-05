@@ -26,6 +26,9 @@ const HeaderBar = styled.div`
     COLORS.semiRed
   } 100%)`};
   border-image-slice: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 
   @media (max-width: ${MEDIA_QUERIES.mobile}px) {
     padding: ${MARGIN.small};
@@ -46,8 +49,8 @@ const HeaderBarContainer = styled.div`
 const LogoContainer = styled.div`
   padding: 10px;
   margin: 0;
-  height: ${HEADER_HEIGHT};
-  width: ${HEADER_HEIGHT};
+  height: "${HEADER_HEIGHT}px";
+  width: "${HEADER_HEIGHT}px";
 `
 
 const LogoLink = styled(AnchorLink)`
@@ -70,6 +73,7 @@ const NavLink = styled(AnchorLink)`
   color: ${COLORS.white};
   text-decoration: none;
 `
+const offset = HEADER_HEIGHT + 24 + 'px'
 
 const Header = () => (
   <HeaderBar>
@@ -80,10 +84,18 @@ const Header = () => (
         </LogoLink>
       </LogoContainer>
       <NavLinks>
-        <NavLink href="#about">About</NavLink>
-        <NavLink href="#skills">Skills</NavLink>
-        <NavLink href="#experience">Experience</NavLink>
-        <NavLink href="#contact">Contact</NavLink>
+        <NavLink offset={offset} href="#about">
+          About
+        </NavLink>
+        <NavLink offset={offset} href="#skills">
+          Skills
+        </NavLink>
+        <NavLink offset={offset} href="#experience">
+          Experience
+        </NavLink>
+        <NavLink offset={offset} href="#contact">
+          Contact
+        </NavLink>
       </NavLinks>
     </HeaderBarContainer>
   </HeaderBar>
