@@ -2,20 +2,25 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-const Image = () => (
+const PvImage = () => (
   <StaticQuery
     query={graphql`
       query {
         placeholderImage: file(relativePath: { eq: "pv-red.png" }) {
           childImageSharp {
-            fixed(width: 84) {
+            fixed(width: 52) {
               ...GatsbyImageSharpFixed
             }
           }
         }
       }
     `}
-    render={data => <Img fixed={data.placeholderImage.childImageSharp.fixed} />}
+    render={data => (
+      <Img
+        fixed={data.placeholderImage.childImageSharp.fixed}
+        style={{ marginBottom: 0 }}
+      />
+    )}
   />
 )
-export default Image
+export default PvImage

@@ -1,25 +1,27 @@
-import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import styled from 'styled-components'
 
+import PvImage from './shared/PvImage'
+
 import {
+  BODY_WIDTH,
   COLORS,
   FONT_WEIGHTS,
   MARGIN,
   TRANSITION,
   MEDIA_QUERIES,
+  HEADER_HEIGHT,
 } from '../styles/constants'
-import PvImage from './pv-image'
 
 const HeaderBar = styled.div`
-  background: ${COLORS.white};
+  background: ${COLORS.darkerGray};
   padding: ${MARGIN.default};
   padding-top: 0px;
   padding-bottom: 0px;
   transition: ${TRANSITION};
-  border-top: ${COLORS.red} 2px solid;
+  border-bottom: ${COLORS.red} 4px solid;
   border-image: ${`linear-gradient(to right, ${COLORS.red} 0%, ${
     COLORS.semiRed
   } 100%)`};
@@ -35,23 +37,26 @@ const HeaderBar = styled.div`
 `
 
 const HeaderBarContainer = styled.div`
-  max-width: 960px;
+  max-width: ${BODY_WIDTH};
   margin: 0 auto;
   display: flex;
   align-items: center;
 `
 
 const LogoContainer = styled.div`
-  padding: 1em;
+  padding: 10px;
+  margin: 0;
+  height: ${HEADER_HEIGHT};
+  width: ${HEADER_HEIGHT};
 `
 
-const LogoLink = styled(Link)`
+const LogoLink = styled(AnchorLink)`
   border: none;
   background-color: transparent !important;
 `
 
 const NavLinks = styled.div`
-  padding: 1em;
+  padding: 20px;
   align-self: flex-end;
   display: grid;
   grid-gap: 30px;
@@ -62,7 +67,7 @@ const NavLinks = styled.div`
 
 const NavLink = styled(AnchorLink)`
   font-weight: ${FONT_WEIGHTS.bold};
-  color: ${COLORS.red};
+  color: ${COLORS.white};
   text-decoration: none;
 `
 
@@ -70,15 +75,14 @@ const Header = () => (
   <HeaderBar>
     <HeaderBarContainer>
       <LogoContainer>
-        <LogoLink to="/">
+        <LogoLink href="#start">
           <PvImage />
         </LogoLink>
       </LogoContainer>
       <NavLinks>
         <NavLink href="#about">About</NavLink>
+        <NavLink href="#skills">Skills</NavLink>
         <NavLink href="#experience">Experience</NavLink>
-        <NavLink href="#projects">Work</NavLink>
-        <NavLink href="#learning">Learning</NavLink>
         <NavLink href="#contact">Contact</NavLink>
       </NavLinks>
     </HeaderBarContainer>
