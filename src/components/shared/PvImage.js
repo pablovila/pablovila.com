@@ -15,12 +15,7 @@ const PvImage = () => (
         }
       }
     `}
-    render={data => (
-      <Img
-        fixed={data.placeholderImage.childImageSharp.fixed}
-        style={{ marginBottom: 0 }}
-      />
-    )}
+    render={data => <Img fixed={data.placeholderImage.childImageSharp.fixed} />}
   />
 )
 export default PvImage

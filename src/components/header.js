@@ -49,8 +49,8 @@ const HeaderBarContainer = styled.div`
 const LogoContainer = styled.div`
   padding: 10px;
   margin: 0;
-  height: "${HEADER_HEIGHT}px";
-  width: "${HEADER_HEIGHT}px";
+  height: ${HEADER_HEIGHT}px;
+  width: ${HEADER_HEIGHT}px;
 `
 
 const LogoLink = styled(AnchorLink)`
