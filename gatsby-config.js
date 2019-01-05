@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Pablo Vila - Full Stack Developer`,
+    description: `Personal webpage and portfolio for Pablo Vila`,
+    author: `@pablovilafer`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -16,10 +16,14 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-plugin-typography`,
+      options: { pathToConfigModule: `src/utils/typography.js` },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Pablo Vila - Full Stack Developer`,
+        short_name: `pablovila`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
