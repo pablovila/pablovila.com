@@ -3,7 +3,9 @@ import styled from 'styled-components'
 
 import { HEADER_HEIGHT, BACKGROUND_SVG, COLORS } from '../styles/constants'
 
-import MeImage from './shared/MeImage'
+import FlipWrapper from './shared/FlipWrapper'
+import MeImage from './images/MeImage'
+import PvImage from './images/PvImage'
 
 const StartContainer = styled.div`
   width: 100%;
@@ -41,7 +43,7 @@ const Start = () => (
   <StartContainer id="start">
     <CenterContainer>
       <MeContainer>
-        <MeImage />
+        <FlipWrapper front={MeImage} back={PvImage} />
       </MeContainer>
       <TextContainer>
         Hello, I'm <Highlight>Pablo Vila</Highlight>.

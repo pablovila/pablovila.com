@@ -3,7 +3,7 @@ import React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import styled from 'styled-components'
 
-import PvImage from './shared/PvImage'
+import PvLogo from './images/PvLogo'
 
 import {
   BODY_WIDTH,
@@ -80,7 +80,7 @@ const Header = () => (
     <HeaderBarContainer>
       <LogoContainer>
         <LogoLink href="#start">
-          <PvImage />
+          <PvLogo />
         </LogoLink>
       </LogoContainer>
       <NavLinks>
