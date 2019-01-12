@@ -26,7 +26,6 @@ const HeaderBar = styled.div`
     COLORS.semiRed
   } 100%)`};
   border-image-slice: 1;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
 
@@ -87,11 +86,11 @@ const Header = () => (
         <NavLink offset={offset} href="#about">
           About
         </NavLink>
-        <NavLink offset={offset} href="#skills">
-          Skills
-        </NavLink>
         <NavLink offset={offset} href="#experience">
           Experience
+        </NavLink>
+        <NavLink offset={offset} href="#skills">
+          Skills
         </NavLink>
         <NavLink offset={offset} href="#contact">
           Contact
