@@ -1,30 +1,40 @@
 import React from 'react'
+import AnimatedHeader from './shared/AnimatedHeader'
 
 const About = () => (
   <div id="about">
-    <h1>About</h1>
+    <AnimatedHeader>About Me</AnimatedHeader>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada
-      nisi a ante condimentum, ac tempor justo tempus. Nam vel mattis diam, sed
-      commodo lacus. Maecenas dapibus metus sed mollis maximus. Nullam sodales
-      interdum sapien, id aliquam ex tristique sed. Curabitur ac ex accumsan
-      enim suscipit commodo. Vestibulum sollicitudin ante metus, eu vestibulum
-      nibh lobortis vel. Pellentesque varius varius mi at molestie. Phasellus
-      eros felis, pellentesque id posuere vel, accumsan at mi. Morbi facilisis
-      dictum fringilla. Suspendisse dictum vulputate sapien, in interdum odio
-      luctus a. Etiam sed arcu quam. Donec dignissim fermentum neque in ornare.
-      Ut dui ante, aliquam quis nisl nec, rutrum viverra mi.
+      Hello! I'm <strong>Pablo Vila</strong>, a full-stack web developer with
+      over 8 years of experience in a wide range of skills, techniques and
+      development. Currently, I'm working at{' '}
+      <a href="https://www.cic.es/">CIC</a> as{' '}
+      <strong>Senior Software Developer</strong>. I'm an enthusiastic developer,
+      I love to learn new things and apply them in my work. I think, as a
+      developer, we can never stop to learn and improve our skills. I like to
+      build interactive and dynamic webs through clean code and solid
+      architecture. I'm focused on fast and responsive web design.
     </p>
     <p>
-      Quisque metus augue, sagittis blandit orci efficitur, ultricies faucibus
-      enim. Donec ornare, massa ut rutrum rhoncus, justo tellus accumsan lorem,
-      nec bibendum ipsum lectus ut urna. Morbi ac pellentesque lectus, et
-      viverra lorem. Morbi nisl nisl, blandit a neque non, gravida egestas
-      risus. Proin mollis pulvinar sapien vel euismod. Sed sed condimentum
-      mauris. Vivamus ac nulla egestas, semper odio iaculis, lobortis eros. Sed
-      scelerisque neque lorem, eu pellentesque nisl bibendum sed. Vestibulum
-      congue sem dolor. Sed in nulla erat. Quisque efficitur augue mauris, vitae
-      elementum sapien accumsan sed.
+      My journey began when I was a child, I was gifted with a computer and I
+      couldn't stop to investigate and breaking it. I studied Systems
+      Administrator course in my hometown. I learnt some basic programming
+      principles there. I started to work immediately when I finished my
+      studies, but I knew it wasn't enough, so I've been learning ever since.
+      Then, I was more interested in mobile devices, so I attended an{' '}
+      <a href="https://www.edx.org/es/course/android-introduccion-a-la-programacion">
+        Android development
+      </a>{' '}
+      course by UPV. In two years, I changed from systems team to mobile
+      development team. My first project was a GIS-oriented web with several
+      tools for geoprocessing. Since then, I've done many projects, some as
+      back-end developer, some as front-end developer and others as full-stack
+      developer. In many of my professional projects, I've developed complete
+      GIS, web maps or geoprocessing tools. Now, I'm attending to{' '}
+      <a href="https://www.esri.es/cursos-y-master/experto-desarrollo/">
+        GIS Development Expert
+      </a>{' '}
+      course by ESRI.
     </p>
   </div>
 )
