@@ -6,6 +6,7 @@ import Start from './start'
 import Header from './header'
 import { BODY_WIDTH } from '../styles/constants'
 import '../styles/layout.css'
+import 'animate.css/animate.min.css'
 
 const BodyContainer = styled.div`
   margin: 0 auto;
