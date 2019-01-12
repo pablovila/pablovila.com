@@ -31,14 +31,20 @@ const typography = new Typography({
       baseLineHeight: '28px',
     })
     return {
-      a: {
+      button: {
+        border: 'none',
+        cursor: 'pointer',
+        padding: 0,
+      },
+      'button:focus': { outline: 'none' },
+      'a, button': {
         color: 'hsla(0,0%,0%,0.73)',
         backgroundColor: 'transparent',
         borderBottom: `2px solid ${linkColor}`,
         textDecoration: 'none',
         transition: 'all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s',
       },
-      'a:hover,a:active': {
+      'a:hover,a:active,button:hover,button:active': {
         backgroundColor: 'rgba(178, 34, 34, 0.5)',
       },
       'h1,h2,h3,h4,h5,h6': {
