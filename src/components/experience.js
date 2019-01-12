@@ -1,8 +1,9 @@
 import React from 'react'
+import AnimatedHeader from './shared/AnimatedHeader'
 
 const Experience = () => (
   <div id="experience">
-    <h1>Experience</h1>
+    <AnimatedHeader>Experience</AnimatedHeader>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada
       nisi a ante condimentum, ac tempor justo tempus. Nam vel mattis diam, sed

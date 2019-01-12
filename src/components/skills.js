@@ -1,8 +1,23 @@
 import React from 'react'
+import styled from 'styled-components'
 
+import AnimatedHeader from './shared/AnimatedHeader'
+import { COLORS } from '../styles/constants'
+
+const Card = styled.div`
+  border-radius: 6px;
+  border-top: 6px solid ${COLORS.red};
+  background: #eeeeee;
+  padding: 6px;
+`
 const Skills = () => (
   <div id="skills">
-    <h1>Skills</h1>
+    <AnimatedHeader>Skills</AnimatedHeader>
+    <Card>
+      <h2>Web design</h2>
+      <h3>Responsive and fast</h3>
+      <p>I like to build web pages considering responsiveness and speed</p>
+    </Card>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada
       nisi a ante condimentum, ac tempor justo tempus. Nam vel mattis diam, sed

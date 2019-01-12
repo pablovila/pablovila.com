@@ -1,8 +1,9 @@
 import React from 'react'
+import AnimatedHeader from './shared/AnimatedHeader'
 
 const Contact = () => (
   <div id="contact">
-    <h1>Contact</h1>
+    <AnimatedHeader>Contact</AnimatedHeader>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada
       nisi a ante condimentum, ac tempor justo tempus. Nam vel mattis diam, sed
