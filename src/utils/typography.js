@@ -2,6 +2,7 @@ import Typography from 'typography'
 import gray from 'gray-percentage'
 import { MOBILE_MEDIA_QUERY } from 'typography-breakpoint-constants'
 import verticalRhythm from 'compass-vertical-rhythm'
+import { COLORS } from '../styles/constants'
 
 const typography = new Typography({
   baseFontSize: '19px',
@@ -47,6 +48,9 @@ const typography = new Typography({
       'li>ol,li>ul': {
         marginLeft: '20px',
         marginBottom: 0,
+      },
+      strong: {
+        color: `${COLORS.red}`,
       },
       // Blockquote styles.
       blockquote: {

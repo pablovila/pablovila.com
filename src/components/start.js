@@ -35,10 +35,6 @@ const TextContainer = styled.div`
   text-align: center;
 `
 
-const Highlight = styled.span`
-  color: ${COLORS.red};
-`
-
 const Start = () => (
   <StartContainer id="start">
     <CenterContainer>
@@ -46,9 +42,9 @@ const Start = () => (
         <FlipWrapper front={MeImage} back={PvImage} />
       </MeContainer>
       <TextContainer>
-        Hello, I'm <Highlight>Pablo Vila</Highlight>.
+        Hello, I'm <strong>Pablo Vila</strong>.
         <br />
-        I'm a full-stack web developer.
+        I'm a full-stack developer.
       </TextContainer>
     </CenterContainer>
   </StartContainer>
