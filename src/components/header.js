@@ -28,7 +28,7 @@ const HeaderBar = styled.div`
   border-image-slice: 1;
   position: sticky;
   top: 0;
-
+  z-index: 1000;
   @media (max-width: ${MEDIA_QUERIES.mobile}px) {
     padding: ${MARGIN.small};
     padding-top: 0px;

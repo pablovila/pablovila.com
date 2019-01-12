@@ -1,5 +1,5 @@
 import React from 'react'
-import { Map, TileLayer } from 'react-leaflet'
+import { Map, TileLayer, Marker } from 'react-leaflet'
 
 const SantanderPosition = {
   lat: 43.46472,
@@ -13,6 +13,7 @@ class AboutMap extends React.Component {
       lng: -3.80444,
     },
     zoom: 4,
+    markerVisible: false,
   }
 
   constructor(props) {
@@ -29,7 +30,10 @@ class AboutMap extends React.Component {
 
   componentDidUpdate() {
     if (this.props.centerOn) {
-      if (this.map.getZoom() > 10.5) {
+      if (this.state.markerVisible) {
+        this.setState({ markerVisible: false })
+      }
+      if (this.map.getZoom() > 11) {
         this.map.flyTo(this.map.getCenter(), 8, {
           animate: true,
           duration: 3,
@@ -40,8 +44,8 @@ class AboutMap extends React.Component {
       } else {
         this.moveToSantander()
       }
-    } else {
-      console.log('aqui solo sale cuando termina de moverse')
+    } else if (!this.state.markerVisible) {
+      this.setState({ markerVisible: true })
     }
   }
 
@@ -53,9 +57,15 @@ class AboutMap extends React.Component {
   }
 
   render() {
+    const marker = this.state.markerVisible ? (
+      <Marker position={SantanderPosition} />
+    ) : (
+      ''
+    )
+
     return (
       <Map
-        style={{ zIndex: -1 }}
+        style={{ zIndex: 999, height: '100%' }}
         center={this.state.latlng}
         zoom={this.state.zoom}
         ref={this.mapRef}
@@ -74,6 +84,7 @@ class AboutMap extends React.Component {
           maxZoom={20}
           ext="png"
         />
+        {marker}
       </Map>
     )
   }
