@@ -1,3 +1,12 @@
 img {
   margin-bottom: 0;
 }
+
+.cloud {
+  flex: 1;
+  height: 100%;
+}
+
+.cloud > div {
+  transition: 1.4s;
+}

@@ -18,8 +18,21 @@ import {
   faTwitter,
   faGithub,
 } from '@fortawesome/free-brands-svg-icons'
+import {
+  faLightbulb,
+  faLaptop,
+  faAlignJustify,
+} from '@fortawesome/free-solid-svg-icons'
 
-library.add(faLinkedinIn, faMediumM, faTwitter, faGithub)
+library.add(
+  faLinkedinIn,
+  faMediumM,
+  faTwitter,
+  faGithub,
+  faLightbulb,
+  faLaptop,
+  faAlignJustify
+)
 
 const Body = styled.div``
 
@@ -50,7 +63,7 @@ const Layout = ({ children }) => (
         <FooterContent>
           <Contact />© {new Date().getFullYear()} — Web app coded and designed
           by{' '}
-          <StyledLink href="https://www.twitter.com/pablovilafer">
+          <StyledLink href="https://twitter.com/pablovilafer">
             Pablo Vila
           </StyledLink>{' '}
           using <StyledLink href="https://www.gatsbyjs.org">Gatsby</StyledLink>

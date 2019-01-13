@@ -60,7 +60,7 @@ class About extends React.Component {
         <p>
           My journey began when I was a child, I was gifted with a computer and
           I couldn't stop to investigate and breaking it. I studied Systems
-          Administrator course in my hometown. I learnt some basic programming
+          Administrator course in my hometown. I learned some basic programming
           principles there. I started to work immediately when I finished my
           studies, but I knew it wasn't enough, so I've been learning ever
           since. Then, I was more interested in mobile devices, so I attended an{' '}
