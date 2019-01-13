@@ -4,9 +4,24 @@ import styled from 'styled-components'
 
 import Start from './start'
 import Header from './header'
-import { BODY_WIDTH } from '../styles/constants'
+import { BODY_WIDTH, COLORS } from '../styles/constants'
+import { StyledLink } from './shared/StyledComponents'
+import Contact from '../components/contact'
+
 import '../styles/layout.css'
 import 'animate.css/animate.min.css'
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import {
+  faLinkedinIn,
+  faMediumM,
+  faTwitter,
+  faGithub,
+} from '@fortawesome/free-brands-svg-icons'
+
+library.add(faLinkedinIn, faMediumM, faTwitter, faGithub)
+
+const Body = styled.div``
 
 const BodyContainer = styled.div`
   margin: 0 auto;
@@ -14,18 +29,34 @@ const BodyContainer = styled.div`
   padding: 0px 1.0875rem 1.45rem;
 `
 
+const StyledFooter = styled('footer')`
+  background: ${COLORS.darkerGray};
+  color: white;
+`
+
+const FooterContent = styled.div`
+  margin: 0 auto;
+  max-width: ${BODY_WIDTH};
+  padding: 2em;
+`
+
 const Layout = ({ children }) => (
   <>
     <Start />
     <Header />
-    <BodyContainer>
-      {children}
-      <footer>
-        © {new Date().getFullYear()} — Web app designed and coded by{' '}
-        <a href="https://www.twitter.com/pablovilafer">Pablo Vila</a> using{' '}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
-    </BodyContainer>
+    <Body>
+      <BodyContainer>{children}</BodyContainer>
+      <StyledFooter>
+        <FooterContent>
+          <Contact />© {new Date().getFullYear()} — Web app coded and designed
+          by{' '}
+          <StyledLink href="https://www.twitter.com/pablovilafer">
+            Pablo Vila
+          </StyledLink>{' '}
+          using <StyledLink href="https://www.gatsbyjs.org">Gatsby</StyledLink>
+        </FooterContent>
+      </StyledFooter>
+    </Body>
   </>
 )
 
