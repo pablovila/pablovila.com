@@ -16,7 +16,7 @@ const CardContainer = styled.div`
 const Card = styled.div`
   border-radius: 6px;
   border-top: 6px solid ${COLORS.red};
-  background: #eeeeee;
+  background: ${COLORS.lightGray};
   padding: 20px;
   text-align: center;
 `
