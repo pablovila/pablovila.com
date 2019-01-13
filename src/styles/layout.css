@@ -10,3 +10,26 @@ img {
 .cloud > div {
   transition: 1.4s;
 }
+
+.experience h4,
+.experience h5,
+.experience h6 {
+  padding: 0;
+  margin: 0;
+}
+
+.experienceImage:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% + 6px);
+  width: calc(100% + 6px);
+  content: ' ';
+  border: 2px solid #eee;
+  border-radius: 100%;
+}
+
+.experienceImage img {
+  border-radius: 100%;
+}
