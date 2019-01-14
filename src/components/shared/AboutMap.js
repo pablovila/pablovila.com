@@ -62,31 +62,34 @@ class AboutMap extends React.Component {
     ) : (
       ''
     )
-
-    return (
-      <Map
-        style={{ zIndex: 999, height: '100%' }}
-        center={this.state.latlng}
-        zoom={this.state.zoom}
-        ref={this.mapRef}
-      >
-        <TileLayer
-          url="https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}"
-          subdomains="abcd"
-          minZoom={1}
-          maxZoom={16}
-          ext="jpg"
-        />
-        <TileLayer
-          url="https://stamen-tiles-{s}.a.ssl.fastly.net/toner-hybrid/{z}/{x}/{y}{r}.{ext}"
-          subdomains="abcd"
-          minZoom={0}
-          maxZoom={20}
-          ext="png"
-        />
-        {marker}
-      </Map>
-    )
+    if (typeof window !== 'undefined') {
+      return (
+        <Map
+          style={{ zIndex: 999, height: '100%' }}
+          center={this.state.latlng}
+          zoom={this.state.zoom}
+          ref={this.mapRef}
+        >
+          <TileLayer
+            url="https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}"
+            subdomains="abcd"
+            minZoom={1}
+            maxZoom={16}
+            ext="jpg"
+          />
+          <TileLayer
+            url="https://stamen-tiles-{s}.a.ssl.fastly.net/toner-hybrid/{z}/{x}/{y}{r}.{ext}"
+            subdomains="abcd"
+            minZoom={0}
+            maxZoom={20}
+            ext="png"
+          />
+          {marker}
+        </Map>
+      )
+    } else {
+      return <div />
+    }
   }
 }
 
