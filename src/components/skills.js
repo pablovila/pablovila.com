@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import AnimatedHeader from './shared/AnimatedHeader'
-import WordCloud from './WordCloud'
+import WordCloud from './shared/WordCloud'
 import { COLORS } from '../styles/constants'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 

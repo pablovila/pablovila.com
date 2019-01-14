@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import TagCloud from 'react-tag-cloud'
 import randomColor from 'randomcolor'
 
-import { COLORS } from '../styles/constants'
+import { COLORS } from '../../styles/constants'
 
 const styles = {
   default: {
