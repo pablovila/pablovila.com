@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import TagCloud from 'react-tag-cloud'
 import randomColor from 'randomcolor'
 
+import { COLORS } from '../styles/constants'
+
 const styles = {
   default: {
     fontFamily: 'sans-serif',
@@ -12,7 +14,7 @@ const styles = {
   large: {
     fontSize: 60,
     fontWeight: 'bold',
-    color: 'firebrick',
+    color: COLORS.red,
   },
   small: {
     fontSize: 16,

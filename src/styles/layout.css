@@ -18,6 +18,22 @@ img {
   margin: 0;
 }
 
+.experience ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0;
+}
+
+.experience ul > li {
+  margin-bottom: 0.75em;
+  position: relative;
+}
+
+.experience ul > li > svg {
+  top: 5px;
+  color: #b32424;
+}
+
 .experienceImage:after {
   display: block;
   position: absolute;

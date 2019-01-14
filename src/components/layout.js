@@ -22,6 +22,7 @@ import {
   faLightbulb,
   faLaptop,
   faAlignJustify,
+  faCodeBranch,
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
@@ -31,7 +32,8 @@ library.add(
   faGithub,
   faLightbulb,
   faLaptop,
-  faAlignJustify
+  faAlignJustify,
+  faCodeBranch
 )
 
 const Body = styled.div``
