@@ -1,17 +1,23 @@
 module.exports = {
   siteMetadata: {
     title: `Pablo Vila - Full Stack Developer`,
-    description: `Personal webpage and portfolio for Pablo Vila`,
+    description: `Personal webpage for Pablo Vila`,
     author: `@pablovilafer`,
   },
   plugins: [
-    `gatsby-plugin-react-leaflet`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -24,7 +30,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Pablo Vila - Full Stack Developer`,
-        short_name: `pablovila`,
+        short_name: `Pablo Vila`,
         start_url: `/`,
         background_color: `#FFFFFF`,
         theme_color: `#b22222`,
