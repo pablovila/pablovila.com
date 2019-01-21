@@ -32,18 +32,18 @@ const pabloExperience = [
           <FontAwesomeIcon icon="code-branch" listItem />
           Built and maintained a web platform to manage job orders within a
           business structure. #<strong>React.js</strong> #<strong>GIS</strong> #
-          <strong>Redux</strong> #<strong>ArcGIS JavaScript API</strong>
+          <strong>C#</strong> #<strong>Oracle</strong>
         </li>
         <li>
           <FontAwesomeIcon icon="code-branch" listItem />
           Created a front-end solution integrating ArcGIS web map and Vaadin
-          web. #<strong>Vaadin</strong> #<strong>Dojo</strong>
+          web. #<strong>ArcGIS API for JavaScript</strong>
         </li>
         <li>
           <FontAwesomeIcon icon="code-branch" listItem />
-          Development of integration back-end services negotiating between
-          several inputs. #<strong>Java</strong> #<strong>Spring</strong> #
-          <strong>Mule ESB</strong>
+          Development of integration back-end service that manage several
+          systems. #<strong>Java</strong> #<strong>Spring</strong> #
+          <strong>Mule ESB</strong> #<strong>MySQL</strong>
         </li>
       </ul>
     ),
@@ -117,6 +117,11 @@ const pabloExperience = [
           complex situations to place business features. #
           <strong>Python</strong> #<strong>JavaScript</strong> #
           <strong>arcPy</strong>
+        </li>
+        <li>
+          <FontAwesomeIcon icon="code-branch" listItem />
+          Android app for technology company. Optimized launcher for children. #
+          <strong>Android</strong>
         </li>
       </ul>
     ),

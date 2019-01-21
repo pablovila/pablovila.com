@@ -16,16 +16,12 @@ import {
 } from '../styles/constants'
 
 const HeaderBar = styled.div`
-  background: ${COLORS.darkerGray};
+  background-color: ${COLORS.white};
   padding: ${MARGIN.default};
   padding-top: 0px;
   padding-bottom: 0px;
   transition: ${TRANSITION};
   border-bottom: ${COLORS.red} 4px solid;
-  border-image: ${`linear-gradient(to right, ${COLORS.red} 0%, ${
-    COLORS.semiRed
-  } 100%)`};
-  border-image-slice: 1;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -69,7 +65,7 @@ const NavLinks = styled.div`
 
 const NavLink = styled(AnchorLink)`
   font-weight: ${FONT_WEIGHTS.bold};
-  color: ${COLORS.white};
+
   text-decoration: none;
 `
 const offset = HEADER_HEIGHT + 24 + 'px'
@@ -86,11 +82,11 @@ const Header = () => (
         <NavLink offset={offset} href="#about">
           About
         </NavLink>
-        <NavLink offset={offset} href="#experience">
-          Experience
-        </NavLink>
         <NavLink offset={offset} href="#skills">
           Skills
+        </NavLink>
+        <NavLink offset={offset} href="#experience">
+          Experience
         </NavLink>
         <NavLink offset={offset} href="#contact">
           Contact

@@ -57,8 +57,8 @@ const FooterContent = styled.div`
 
 const Layout = ({ children }) => (
   <>
-    <Start />
     <Header />
+    <Start />
     <Body>
       <BodyContainer>{children}</BodyContainer>
       <StyledFooter>

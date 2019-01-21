@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { HEADER_HEIGHT, BACKGROUND_SVG, COLORS } from '../styles/constants'
+import { BACKGROUND_SVG, COLORS } from '../styles/constants'
 
 import FlipWrapper from './shared/FlipWrapper'
 import MeImage from './images/MeImage'
@@ -9,7 +9,7 @@ import PvImage from './images/PvImage'
 
 const StartContainer = styled.div`
   width: 100%;
-  height: calc(100vh - ${HEADER_HEIGHT + 4}px);
+  height: 760px;
   background-color: ${COLORS.darkGray};
   background-image: ${BACKGROUND_SVG};
   display: flex;
