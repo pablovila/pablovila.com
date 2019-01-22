@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import AnimatedHeader from './shared/AnimatedHeader'
@@ -10,12 +9,6 @@ import CicImage from './images/CicImage'
 import EsriImage from './images/EsriImage'
 import UpvImage from './images/UpvImage'
 import YoungerImage from './images/YoungerImage'
-
-const GridContainer = styled.div`
-  display: grid;
-  grid-template-columns: auto auto 1fr;
-  grid-gap: 10px;
-`
 
 const pabloExperience = [
   {
@@ -31,19 +24,17 @@ const pabloExperience = [
         <li>
           <FontAwesomeIcon icon="code-branch" listItem />
           Built and maintained a web platform to manage job orders within a
-          business structure. #<strong>React.js</strong> #<strong>GIS</strong> #
-          <strong>C#</strong> #<strong>Oracle</strong>
+          business structure. #React.js #GIS # C# #Oracle
         </li>
         <li>
           <FontAwesomeIcon icon="code-branch" listItem />
           Created a front-end solution integrating ArcGIS web map and Vaadin
-          web. #<strong>ArcGIS API for JavaScript</strong>
+          web. #ArcGIS API for JavaScript
         </li>
         <li>
           <FontAwesomeIcon icon="code-branch" listItem />
           Development of integration back-end service that manage several
-          systems. #<strong>Java</strong> #<strong>Spring</strong> #
-          <strong>Mule ESB</strong> #<strong>MySQL</strong>
+          systems. #Java #Spring #Mule ESB #MySQL
         </li>
       </ul>
     ),
@@ -76,10 +67,9 @@ const pabloExperience = [
     ),
     desc: (
       <>
-        Entry-level android programming course. Builted a cloud-connected
-        Android app, and learned best practices of mobile development, and
-        Android development in particular. #<strong>Java</strong> #
-        <strong>Android</strong>
+        Entry-level android programming course. Built a cloud-connected Android
+        app, and learned best practices of mobile development, and Android
+        development in particular. #Java #Android
       </>
     ),
   },
@@ -96,7 +86,7 @@ const pabloExperience = [
         Intense course in one of most prestigious universities of Spain. I
         learned basic concepts, design patterns, computer structure,
         object-oriented programming, functional programming and algorithms among
-        other topics. #<strong>Java</strong>
+        other topics. #Java
       </>
     ),
   },
@@ -114,14 +104,13 @@ const pabloExperience = [
           <FontAwesomeIcon icon="code-branch" listItem />
           GIS web app to create and manage renewable projects for important
           electric company. Also, geoprocessing tools to locate and calculate
-          complex situations to place business features. #
-          <strong>Python</strong> #<strong>JavaScript</strong> #
-          <strong>arcPy</strong>
+          complex situations to place business features. #Python #JavaScript
+          #arcpy
         </li>
         <li>
           <FontAwesomeIcon icon="code-branch" listItem />
           Android app for technology company. Optimized launcher for children. #
-          <strong>Android</strong>
+          Android
         </li>
       </ul>
     ),
@@ -129,9 +118,9 @@ const pabloExperience = [
 ]
 
 const Experience = () => (
-  <div id="experience" className="experience">
+  <div id="experience">
     <AnimatedHeader>Experience</AnimatedHeader>
-    <GridContainer>
+    <div className="grid-container">
       {pabloExperience.map((exp, index) => (
         <ExperienceItem
           key={index}
@@ -141,7 +130,7 @@ const Experience = () => (
           desc={exp.desc}
         />
       ))}
-    </GridContainer>
+    </div>
   </div>
 )
 

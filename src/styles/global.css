@@ -1,0 +1,256 @@
+.body-container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0px 1.0875rem 1.45rem;
+}
+
+.footer {
+  background: #1b242f;
+  color: #ffffff;
+}
+
+.footer .footer-container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 2em;
+}
+
+.red {
+  color: #b32424;
+}
+
+.header-bar {
+  background-color: #ffffff;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-bottom: #b32424 4px solid;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-bar .header-bar-container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.header-bar .header-bar-container .logo-container {
+  padding: 10px;
+  margin: 0;
+  height: 72px;
+  width: 72px;
+}
+
+.header-bar .header-bar-container .logo-container .link {
+  border: none;
+  background-color: transparent !important;
+}
+
+.header-bar .header-bar-container .nav-container {
+  padding: 20px;
+  align-self: flex-end;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(6, auto);
+  align-items: center;
+  margin-left: auto;
+}
+
+.header-bar .header-bar-container .nav-container .nav-link {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#start {
+  width: 100%;
+  height: 760px;
+  background-color: #252934;
+  background-image: url(../images/topo-background.svg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 2px solid #b32424;
+}
+
+#start .center-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#start .center-container .me {
+  padding: 1em 0;
+}
+
+#start .center-container .text {
+  font-size: 32pt;
+  line-height: 36pt;
+  color: #ffffff;
+  text-align: center;
+}
+
+#about .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 'hello hello' 'location map' 'journey journey' 'cloud cloud';
+}
+
+#about .grid-container .hello {
+  grid-area: hello;
+}
+
+#about .grid-container .location {
+  grid-area: location;
+  align-self: center;
+}
+
+#about .grid-container .journey {
+  grid-area: journey;
+  padding-top: 1em;
+}
+
+#about .grid-container .cloud {
+  grid-area: cloud;
+  height: 380px;
+}
+
+#about .grid-container .map {
+  grid-area: map;
+}
+
+#about .cloud {
+  flex: 1;
+  height: 100%;
+}
+
+#about .cloud > div {
+  transition: 1.4s;
+}
+
+#skills .card-container {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 33.333%);
+  padding-bottom: 1.58rem;
+}
+
+#skills .card-container .card {
+  border-radius: 6px;
+  border-top: 6px solid #b32424;
+  background: #eeeeee;
+  padding: 20px;
+  margin: 0 10px;
+  text-align: center;
+}
+
+#skills .card-container .card .icon-container {
+  font-size: 40px;
+}
+
+#skills .card-container .header {
+  margin-top: 0;
+  min-height: 62px;
+}
+
+#skills .skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+#experience .grid-container {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  grid-gap: 10px;
+}
+
+#experience h4,
+#experience h5,
+#experience h6 {
+  padding: 0;
+  margin: 0;
+}
+
+#experience ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0;
+}
+
+#experience ul > li {
+  margin-bottom: 0.75em;
+  position: relative;
+}
+
+#experience ul > li > svg {
+  top: 5px;
+  color: #b32424;
+}
+
+#experience .date-container {
+  color: #252934;
+  font-size: small;
+  align-self: center;
+  justify-self: end;
+}
+
+#experience .experience-image {
+  align-self: center;
+  justify-self: center;
+  height: 72px;
+  width: 72px;
+  padding: 8px;
+  position: relative;
+}
+
+#experience .experience-image:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% + 6px);
+  width: calc(100% + 6px);
+  content: ' ';
+  border: 2px solid #eee;
+  border-radius: 100%;
+}
+
+#experience .experience-image img {
+  border-radius: 100%;
+}
+
+#experience .description-container {
+  justify-self: start;
+  padding: 10px;
+  font-size: 15px;
+  color: #989898;
+}
+
+#contact {
+  text-align: center;
+}
+
+#contact .grid-container {
+  display: inline-grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 1em;
+  padding-bottom: 1.58rem;
+}
+
+#contact .grid-container .link {
+  background: #262f38;
+  border: none;
+  color: #ffffff;
+  padding: 10px 15px;
+  font-size: 30px;
+}
+
+#contact .grid-container .link:hover,
+#contact .grid-container .link:active {
+  background-color: rgba(178, 34, 34, 0.5);
+}
+
+img {
+  margin-bottom: 0;
+}

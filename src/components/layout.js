@@ -1,15 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
 
 import Start from './start'
 import Header from './header'
-import { BODY_WIDTH, COLORS } from '../styles/constants'
-import { StyledLink } from './shared/StyledComponents'
 import Contact from '../components/contact'
-
-import '../styles/layout.css'
-import 'animate.css/animate.min.css'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {
@@ -36,42 +30,26 @@ library.add(
   faCodeBranch
 )
 
-const Body = styled.div``
-
-const BodyContainer = styled.div`
-  margin: 0 auto;
-  max-width: ${BODY_WIDTH};
-  padding: 0px 1.0875rem 1.45rem;
-`
-
-const StyledFooter = styled('footer')`
-  background: ${COLORS.darkerGray};
-  color: white;
-`
-
-const FooterContent = styled.div`
-  margin: 0 auto;
-  max-width: ${BODY_WIDTH};
-  padding: 2em;
-`
-
 const Layout = ({ children }) => (
   <>
     <Header />
     <Start />
-    <Body>
-      <BodyContainer>{children}</BodyContainer>
-      <StyledFooter>
-        <FooterContent>
+    <div>
+      <div className="body-container">{children}</div>
+      <footer className="footer">
+        <div className="footer-container">
           <Contact />© {new Date().getFullYear()} — Web app coded and designed
           by{' '}
-          <StyledLink href="https://twitter.com/pablovilafer">
+          <a className="red" href="https://twitter.com/pablovilafer">
             Pablo Vila
-          </StyledLink>{' '}
-          using <StyledLink href="https://www.gatsbyjs.org">Gatsby</StyledLink>
-        </FooterContent>
-      </StyledFooter>
-    </Body>
+          </a>{' '}
+          using{' '}
+          <a className="red" href="https://www.gatsbyjs.org">
+            Gatsby
+          </a>
+        </div>
+      </footer>
+    </div>
   </>
 )
 
