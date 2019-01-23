@@ -49,13 +49,16 @@ class About extends React.Component {
             </p>
           </div>
           <div className="location">
-            Currently, I live in <em>Santander, Spain</em>. It's a peaceful,
-            beautiful city and an amazing place to live and work. Travelling is
-            one of my passions, so I'm open to relocation and work-related
-            travel. I've done extensive geographic information systems work, and
-            maps are another of my passions. Check out this map of where
-            <button onClick={this.onHomeClick}>I live</button> and some of the
-            places <button onClick={this.onRandomClick}> I've visited</button>.
+            <p>
+              Currently, I live in <em>Santander, Spain</em>. It's a peaceful,
+              beautiful city and an amazing place to live and work. Travelling
+              is one of my passions, so I'm open to relocation and work-related
+              travel. I've done extensive geographic information systems work,
+              and maps are another of my passions. Check out this map of where
+              <button onClick={this.onHomeClick}>I live</button> and some of the
+              places <button onClick={this.onRandomClick}> I've visited</button>
+              .
+            </p>
           </div>
           <div className="map">
             <AboutMap

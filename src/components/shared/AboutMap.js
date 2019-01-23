@@ -15,7 +15,7 @@ import { relevantCountries } from '../../data/relevant-countries'
 
 const wrapperStyles = {
   width: '100%',
-  maxWidth: 500,
+  height: '100%',
   margin: '0 auto',
 }
 
@@ -114,7 +114,7 @@ class AboutMap extends Component {
               height={300}
               style={{
                 width: '100%',
-                height: 'auto',
+                height: '100%',
               }}
             >
               <ZoomableGroup center={[x, y]} zoom={zoom} disablePanning>

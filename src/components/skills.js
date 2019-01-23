@@ -7,7 +7,7 @@ const Skills = () => (
   <div id="skills">
     <AnimatedHeader>Skills</AnimatedHeader>
     <div className="card-container">
-      <div className="card">
+      <div className="card card1">
         <div className="icon-container red">
           <FontAwesomeIcon icon="lightbulb" />
         </div>
@@ -18,7 +18,7 @@ const Skills = () => (
           speed. For each web there's some suitable solution.
         </p>
       </div>
-      <div className="card">
+      <div className="card card2">
         <div className="icon-container red">
           <FontAwesomeIcon icon="align-justify" />
         </div>
@@ -30,7 +30,7 @@ const Skills = () => (
           developing.
         </p>
       </div>
-      <div className="card">
+      <div className="card card3">
         <div className="icon-container red">
           <FontAwesomeIcon icon="laptop" />
         </div>
