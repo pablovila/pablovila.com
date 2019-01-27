@@ -346,6 +346,9 @@ img {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  #start {
+    max-height: 380px;
+  }
 }
 
 /* 
@@ -371,7 +374,7 @@ img {
   }
 
   #start {
-    height: 540px;
+    height: 380px;
   }
 
   #about .grid-container {
@@ -439,7 +442,7 @@ img {
   }
 
   #start {
-    height: 380px;
+    height: 260px;
   }
 
   #start .center-container .text {
