@@ -34,7 +34,7 @@ const pabloExperience = [
         <li>
           <FontAwesomeIcon icon="code-branch" listItem />
           Development of integration back-end service that manage several
-          systems. #Java #Spring #Mule ESB #MySQL
+          systems. #Java #Spring #Hibernate #MySQL
         </li>
       </ul>
     ),
@@ -109,8 +109,8 @@ const pabloExperience = [
         </li>
         <li>
           <FontAwesomeIcon icon="code-branch" listItem />
-          Android app for technology company. Optimized launcher for children. #
-          Android
+          Android app for technology company. Optimized launcher for children.
+          #Android
         </li>
       </ul>
     ),
