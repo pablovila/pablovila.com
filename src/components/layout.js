@@ -39,11 +39,7 @@ const Layout = ({ children }) => (
       <footer className="footer">
         <div className="footer-container">
           <Contact />© {new Date().getFullYear()} — Web app coded and designed
-          by{' '}
-          <a className="red" href="https://twitter.com/pablovilafer">
-            Pablo Vila
-          </a>{' '}
-          using{' '}
+          by <strong>Pablo Vila</strong> using{' '}
           <a className="red" href="https://www.gatsbyjs.org">
             Gatsby
           </a>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const twitter = 'https://twitter.com/pablovilafer'
 const linkedin = 'https://www.linkedin.com/in/pablovila'
@@ -7,23 +8,23 @@ const github = 'https://github.com/pablovila/'
 const medium = 'https://medium.com/@pablovilafer'
 
 const ExternalLink = props => (
-  <a
+  <OutboundLink
     className="link"
     href={props.href}
     target="_blank"
     rel="noopener noreferrer"
   >
     {props.children}
-  </a>
+  </OutboundLink>
 )
 
 const Contact = () => (
   <div id="contact">
     <p>
       Feel free to contact me and say "Hi", <br /> via{' '}
-      <a className="red" href="mailto:pablo.vilafer@gmail.com">
+      <OutboundLink className="red" href="mailto:pablo.vilafer@gmail.com">
         email
-      </a>{' '}
+      </OutboundLink>{' '}
       or find me online.
     </p>
     <div className="grid-container">
