@@ -24,7 +24,7 @@ const pabloExperience = [
         <li>
           <FontAwesomeIcon icon="code-branch" listItem />
           Built and maintained a web platform to manage job orders within a
-          business structure. #React.js #GIS # C# #Oracle
+          business structure. #React.js #GIS #.NET #Oracle
         </li>
         <li>
           <FontAwesomeIcon icon="code-branch" listItem />
