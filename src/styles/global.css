@@ -341,17 +341,6 @@ img {
 }
 
 /* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  #start {
-    max-height: 380px;
-  }
-}
-
-/* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
@@ -374,7 +363,7 @@ img {
   }
 
   #start {
-    height: 380px;
+    height: 540px;
   }
 
   #about .grid-container {
@@ -417,6 +406,17 @@ img {
 }
 
 /* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 320px) and (max-width: 1024px) and (orientation: landscape) {
+  #start {
+    height: 360px;
+  }
+}
+
+/* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
@@ -442,7 +442,7 @@ img {
   }
 
   #start {
-    height: 260px;
+    height: 380px;
   }
 
   #start .center-container .text {
