@@ -10,7 +10,7 @@ const Header = () => (
   <header className="header-bar">
     <div className="header-bar-container">
       <div className="logo-container">
-        <AnchorLink className="link" href="#start">
+        <AnchorLink className="link" offset={offset} href="#start">
           <PvLogo />
         </AnchorLink>
       </div>

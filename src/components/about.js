@@ -70,12 +70,12 @@ class About extends React.Component {
           <div className="journey">
             <p>
               My journey began when I was a child, I was gifted with a computer
-              and I couldn't stop to investigate and breaking it. I've{' '}
-              <em>Senior Technician in computer systems</em> degree. I learned
-              some basic programming principles there. I started to work
-              immediately when I finished my studies, but I knew it wasn't
-              enough, so I've been learning ever since. Then, I was more
-              interested in mobile devices, so I attended an{' '}
+              and I couldn't stop to investigate and breaking it. I graduated as{' '}
+              <em>Senior Technician in Computer Systems</em>. I learned some
+              basic programming principles there. I started to work immediately
+              when I finished my studies, but I knew it wasn't enough, so I've
+              been learning ever since. Then, I was more interested in mobile
+              devices, so I attended an{' '}
               <a href="https://www.edx.org/es/course/android-introduccion-a-la-programacion">
                 Android development
               </a>{' '}
@@ -87,9 +87,7 @@ class About extends React.Component {
               </a>{' '}
               by ESRI. Since then, I've done many projects, some as back-end
               developer, some as front-end developer and others as full-stack
-              developer. In many of my professional projects, I've developed
-              complete GIS, web maps or geoprocessing tools. At present, I'm
-              attending to{' '}
+              developer. At present, I'm attending to{' '}
               <a href="https://www.esri.es/cursos-y-master/experto-desarrollo/">
                 GIS Development Expert
               </a>{' '}

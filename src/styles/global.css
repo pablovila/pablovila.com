@@ -392,6 +392,10 @@ img {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
+
+  #experience .grid-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (min-width: 560px) and (max-width: 767px) {
@@ -459,5 +463,71 @@ img {
   #skills .skills-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+  }
+
+  #experience .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  #contact .grid-container {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 320px) {
+  .body-container {
+    max-width: calc(100% - 1em);
+  }
+
+  .footer .footer-container {
+    max-width: calc(100% - 1em);
+  }
+
+  .header-bar .header-bar-container {
+    max-width: calc(100% - 1em);
+  }
+
+  .header-bar .header-bar-container .nav-container {
+    grid-gap: 5px;
+  }
+  .header-bar .header-bar-container .nav-container .nav-link {
+    font-size: smaller;
+  }
+
+  #start {
+    height: 380px;
+  }
+
+  #start .center-container .text {
+    font-size: 24pt;
+  }
+
+  #about .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: 'hello' 'location' 'map' 'journey' 'cloud';
+  }
+
+  #skills .card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 'card1' 'card2' 'card3';
+  }
+
+  #skills .card-container .card {
+    margin-bottom: 1em;
+  }
+
+  #skills .skills-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #experience .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  #contact .grid-container {
+    grid-template-columns: auto auto;
   }
 }
