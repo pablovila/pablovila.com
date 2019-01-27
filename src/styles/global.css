@@ -94,7 +94,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas: 'hello hello' 'location map' 'journey journey' 'cloud cloud';
+  grid-template-areas: 'hello hello' 'location location' 'cloud cloud' 'journey1 journey2';
+  column-gap: 1em;
 }
 
 #about .grid-container .hello {
@@ -106,18 +107,19 @@
   align-self: center;
 }
 
-#about .grid-container .journey {
-  grid-area: journey;
+#about .grid-container .journey1 {
+  grid-area: journey1;
+  padding-top: 1em;
+}
+
+#about .grid-container .journey2 {
+  grid-area: journey2;
   padding-top: 1em;
 }
 
 #about .grid-container .cloud {
   grid-area: cloud;
   height: 380px;
-}
-
-#about .grid-container .map {
-  grid-area: map;
 }
 
 #about .cloud {
@@ -374,7 +376,7 @@ img {
 
   #about .grid-container {
     grid-template-columns: 1fr;
-    grid-template-areas: 'hello' 'location' 'map' 'journey' 'cloud';
+    grid-template-areas: 'hello' 'location' 'cloud' 'journey1' 'journey2';
   }
 
   #skills .card-container {
@@ -446,7 +448,7 @@ img {
 
   #about .grid-container {
     grid-template-columns: 1fr;
-    grid-template-areas: 'hello' 'location' 'map' 'journey' 'cloud';
+    grid-template-areas: 'hello' 'location' 'cloud' 'journey1' 'journey2';
   }
 
   #skills .card-container {
@@ -504,7 +506,7 @@ img {
 
   #about .grid-container {
     grid-template-columns: 1fr;
-    grid-template-areas: 'hello' 'location' 'map' 'journey' 'cloud';
+    grid-template-areas: 'hello' 'location' 'cloud' 'journey1' 'journey2';
   }
 
   #skills .card-container {
