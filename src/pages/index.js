@@ -8,7 +8,7 @@ import Experience from '../components/experience'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="HOME" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Pablo Vila" keywords={[`gatsby`, `application`, `react`]} />
     <About />
     <Skills />
     <Experience />
