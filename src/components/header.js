@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import { Link } from 'gatsby'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import PvLogo from './images/PvLogo'
@@ -27,6 +28,9 @@ const Header = () => (
         <AnchorLink className="nav-link" offset={offset} href="#contact">
           Contact
         </AnchorLink>
+        <Link className="nav-link resume-link" to="cv">
+          Resume
+        </Link>
       </div>
     </div>
   </header>

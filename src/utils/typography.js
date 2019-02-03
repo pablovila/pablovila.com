@@ -42,7 +42,6 @@ const typography = new Typography({
         backgroundColor: 'transparent',
         borderBottom: `2px solid ${linkColor}`,
         textDecoration: 'none',
-        transition: 'all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s',
       },
       'a:hover,a:active,button:hover,button:active': {
         backgroundColor: 'rgba(178, 34, 34, 0.5)',
