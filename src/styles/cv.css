@@ -12,6 +12,22 @@ body.cv {
   margin: 80px auto;
   background-color: #fff;
   box-shadow: 2px 2px 1px #606060;
+  position: relative;
+}
+
+.cv-switcher {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  color: #888;
+  border-left: 1px solid #888;
+  border-bottom: 1px solid #888;
+  cursor: pointer;
+}
+
+.cv-switcher:hover {
+  text-decoration: underline;
 }
 
 .cv-section {
@@ -101,6 +117,45 @@ body.cv {
 .cv-section-skill:hover {
   background-color: #b32424;
   color: #fff;
+}
+
+.cv-json-container {
+  height: calc(100vh - 300px);
+}
+
+.cv pre {
+  margin-bottom: 0;
+  font-size: 12px;
+  height: 100%;
+  line-height: 1.5;
+}
+
+.cv code {
+  font-size: 12px;
+  height: 100%;
+  line-height: 1.5;
+}
+
+.cv code::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: #f5f5f5;
+}
+
+.cv code::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+
+.cv code::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #e4e4e4;
+  border: 1px solid #aaa;
+}
+
+.cv code::-webkit-scrollbar-thumb:hover {
+  background: #fff;
 }
 
 .cv li {
