@@ -1,0 +1,136 @@
+body.cv {
+  color: #000;
+  background-color: #c1c1c1;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.cv-page {
+  width: 920px;
+  padding: 80px 80px 60px;
+  margin: 80px auto;
+  background-color: #fff;
+  box-shadow: 2px 2px 1px #606060;
+}
+
+.cv-section {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-gap: 1em;
+  margin-bottom: 1em;
+}
+
+.cv-section-title {
+  color: #b32424;
+  font-size: 24px;
+  font-weight: normal;
+  font-family: Roboto, serif;
+}
+
+.cv-section-sideline {
+  text-align: right;
+  color: #888;
+  font-size: 12px;
+}
+
+.cv-section-company {
+  text-transform: uppercase;
+  background-color: #eee;
+  padding: 4px;
+  margin-bottom: 5px;
+}
+
+.cv-section-period {
+  margin-bottom: 5px;
+}
+
+.cv .cv-section-position {
+  font-weight: normal;
+  font-family: Roboto, serif;
+  margin-bottom: 12px;
+}
+
+.cv-section-summary {
+  margin-bottom: 8px;
+}
+
+.cv-header {
+  grid-template-columns: 150px 1fr 180px;
+}
+
+.cv .cv-header-name {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 8px;
+  color: #b32424;
+}
+
+.cv .cv-header-position {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 8px;
+  color: #888;
+  font-family: Roboto, serif;
+}
+
+.cv .cv-header-text {
+  margin-bottom: 8px;
+}
+
+.cv-header-contact {
+  color: #888;
+  border-left: 2px solid #dcdcdc;
+  padding-left: 8px;
+  height: fit-content;
+  align-self: center;
+  line-height: 1.7em;
+}
+
+.cv-section-skill {
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: #eee;
+  padding: 2px 6px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.cv-section-skill:hover {
+  background-color: #b32424;
+  color: #fff;
+}
+
+.cv li {
+  margin-bottom: 0;
+}
+
+.cv h1,
+.cv h2,
+.cv h3,
+.cv h4,
+.cv h5,
+.cv h6 {
+  margin: 0;
+}
+
+.cv a {
+  transition: none;
+  color: #888;
+  border: none;
+}
+
+.cv a:hover,
+.cv a:active,
+.cv button:hover,
+.cv button:active {
+  background-color: #b32424;
+  color: #fff;
+}
+
+::selection {
+  color: #fff;
+  background: #b32424;
+}

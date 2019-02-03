@@ -1,0 +1,38 @@
+{
+  "fullName": "Pablo Vila - ESPAÑOL",
+  "position": "Full-Stack Web Developer",
+  "description": "Self-motivated web application developer with more than 8 years of experience.",
+  "location": "Santander, Spain. Willing to relocate around the world or working remote",
+  "photo": "",
+  "contactInfo": {
+    "email": "pablo.vilafer@gmail.com",
+    "phone": "+34 644 263 873",
+    "web": "www.pablovila.com",
+    "github": "github.com/pablovila/",
+    "linkedin": "linkedin.com/in/pablovila/",
+    "twitter": "pablovilafer"
+  },
+  "experience": [
+    {
+      "company": "CIC Consulting Informático",
+      "period": "01/2016 - Present",
+      "url": "cic.es",
+      "position": "Senior Software Developer",
+      "summary": "Development of web applications with several technologies like React.js...",
+      "projects": ["Led and coordinated tala y poda project"]
+    }
+  ],
+  "skills": ["JavaScript", "React.js", "Node.js", "Team working", "C#"],
+  "education": [
+    {
+      "college": "ESRI",
+      "period": "07/2018",
+      "title": "Web Application Developer Associate 10.4"
+    },
+    {
+      "college": "IES Augusto Linares",
+      "period": "09/2009 - 05/2011",
+      "title": "Senior technician in Computer Systems"
+    }
+  ]
+}

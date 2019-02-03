@@ -1,0 +1,110 @@
+{
+  "fullName": "Pablo Vila",
+  "position": "Full-Stack Web Developer",
+  "description": "Enthusiastic developer with more than 8 years of experience. I consider myself tenacious, curious, collaborative and passionate.",
+  "location": "I live in Santander, Spain. Willing to relocate around the world or working remote.",
+  "photo": "images/me-square.png",
+  "contactInfo": {
+    "email": "pablo.vilafer@gmail.com",
+    "phone": "+34 644 263 873",
+    "web": "www.pablovila.com",
+    "github": "github.com/pablovila",
+    "linkedin": "linkedin.com/in/pablovila",
+    "twitter": "@pablovilafer"
+  },
+  "experience": [
+    {
+      "company": "CIC Consulting",
+      "period": "01/2016 - Present",
+      "url": "cic.es",
+      "position": "Senior Software Developer",
+      "summary": "Development of web applications with front-end technologies like React.js, Ionic, AngularJS and back-end web services using C# and Java.",
+      "projects": [
+        "Wrote integration services in Java between five different systems using RabbitMQ and Spring.",
+        "Helped to develop an integral system, managing a small team to develop front-end part of maps and creating map services in C# to get the position of millions of records.",
+        "Developed project to manage and send work orders to field operators using React as front-end technology.",
+        "Created mobile application using Ionic to receive, manage and locating work orders.",
+        "Implemented REST web services in C# to support web application. Integration with multiple services like Alfresco and FTPs."
+      ]
+    },
+    {
+      "company": "CIC Consulting",
+      "period": "08/2013 - 12/2015",
+      "url": "cic.es",
+      "position": "Mobile Developer",
+      "summary": "Junior developer in mobile team, where I learned new technologies like Android or Dojo.",
+      "projects": [
+        "Created an Android app to be the launcher of other apps for an important manufacter of tablets.",
+        "Developed fully functional GIS web application for renewables section of electrical company using JavaScript and Python web services. Created desktop geoprocessing tools using Python and SQLAlchemy.",
+        "Maintained and evoluted GIS system following user requests.",
+        "Contributed to develop an important part of desktop and mobile application to view, edit and manage electrical assets in orthogonal diagrams.",
+        "Adapted and developed GIS web application for another electrical company with specific requests."
+      ]
+    },
+    {
+      "company": "CIC Consulting",
+      "period": "05/2011 - 07/2013",
+      "url": "cic.es",
+      "position": "Computer Operator",
+      "summary": "First level support operator in IT justice system dealing with end-user of very specialized justice applications.",
+      "projects": [
+        "Resolution of incidents typified under procedure.",
+        "Supervision of central computer equipment.",
+        "Migration and update of new software versions.",
+        "Support to the end user in tasks of special difficulty."
+      ]
+    }
+  ],
+  "skills": [
+    "JavaScript",
+    "React.js",
+    "Front-end Development",
+    "Node.js",
+    "Team working",
+    "Redux",
+    "Sofware Design",
+    "Git",
+    "User Experience (UX)",
+    "HTML",
+    "CSS",
+    "C#",
+    "Java",
+    "Spring",
+    "Hibernate",
+    "GraphQL",
+    "Ionic Framework",
+    "Amazon Web Services (AWS)",
+    "MongoDB",
+    "GitHub",
+    "Android",
+    "Mobile Development",
+    "GIS",
+    "ArcGIS Server"
+  ],
+  "education": [
+    {
+      "college": "ESRI",
+      "period": "07/2018",
+      "title": "Web Application Developer Associate Certification",
+      "summary": "Proficiency using ArcGIS technologies to build web applications with object-oriented programming, application documentation, maintenance, performance, and implementing client-side and server-side security, and with Esri's ArcGIS technologies and best practices."
+    },
+    {
+      "college": "UPV",
+      "period": "01/2013 - 05/2013",
+      "title": "Android Programming",
+      "summary": "Entry-level android programming course. Built a cloud-connected Android app, and learned best practices of mobile development, and Android development in particular."
+    },
+    {
+      "college": "CESINE",
+      "period": "05/2011 - 07/2013",
+      "title": "Java Programming",
+      "summary": "Intense and oriented Java course. I learned about design patterns, object-oriented programming, functional programming and algorithms."
+    },
+    {
+      "college": "IES Augusto Linares",
+      "period": "09/2009 - 05/2011",
+      "title": "Senior Technician in Computer Systems",
+      "summary": "Learned basic principles of programming, databases and hardware, Also, I learned about computer structures, maths and physics applied to computer's field. "
+    }
+  ]
+}
