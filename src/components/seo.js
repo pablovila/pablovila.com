@@ -14,7 +14,7 @@ function SEO({ description, lang, meta, keywords, title }) {
             : data.site.siteMetadata.title
         const metaDescription =
           description || data.site.siteMetadata.description
-        const bodyClassName = title === 'resume' ? 'cv' : ''
+        const bodyClassName = title === 'CV' ? 'cv' : ''
         return (
           <Helmet
             htmlAttributes={{
@@ -22,7 +22,7 @@ function SEO({ description, lang, meta, keywords, title }) {
             }}
             title={title}
             titleTemplate={titleTemplate}
-            bodyAttributes={{class: bodyClassName}}
+            bodyAttributes={{ class: bodyClassName }}
             meta={[
               {
                 name: `description`,

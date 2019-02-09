@@ -29,7 +29,6 @@ class Cv extends Component {
   }
 
   render() {
-    console.log(CvJson)
     let cv = <></>
     if (this.state.codeView) {
       cv = (
@@ -61,7 +60,7 @@ class Cv extends Component {
     return (
       <>
         <SEO
-          title="resume"
+          title="CV"
           keywords={[`resume`, `cv`, `curriculum vitae`, `curriculum`]}
         />
         <div className="cv-page">{cv}</div>
