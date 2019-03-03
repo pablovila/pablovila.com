@@ -9,8 +9,8 @@ const About = () => (
     <div className="grid-container">
       <div className="hello">
         <p>
-          I'm a full-stack web developer with more than 8 years of experience
-          and a wide range of skills and techniques. Currently, I'm a{' '}
+          I'm a front-end developer with more than 8 years of experience and a
+          wide range of skills and techniques. Currently, I'm a{' '}
           <em>Senior Software Developer</em> at{' '}
           <a href="https://www.cic.es/">CIC</a>. I'm an enthusiastic developer,
           I love to learn new things and apply them in my work. As a developer,
@@ -45,7 +45,7 @@ const About = () => (
             Android development
           </a>{' '}
           course by UPV. My first big project was a GIS-oriented web with
-          several tools for geoprocessing. I'm certified in{' '}
+          several tools for geoprocessing. I'm certified as{' '}
           <a href="https://www.youracclaim.com/badges/0778ec9f-13b5-4181-996e-92bad14dcf43/">
             Web Application Developer Associate
           </a>{' '}

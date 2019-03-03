@@ -13,7 +13,7 @@ const Start = () => (
       <div className="text">
         Hi, I'm <strong>Pablo Vila</strong>.
         <br />
-        I'm a full-stack developer.
+        I'm a Front-End Developer.
       </div>
     </div>
   </div>

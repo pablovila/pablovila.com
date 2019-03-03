@@ -34,7 +34,7 @@ const Skills = () => (
         <div className="icon-container red">
           <FontAwesomeIcon icon="laptop" />
         </div>
-        <h2 className="header">Full-Stack Development</h2>
+        <h2 className="header">Front-End Development</h2>
         <h4>Thinking big</h4>
         <p>
           Although I'm not an expert in every aspect of the stack, I have enough
