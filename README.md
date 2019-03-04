@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.pablovila.com">
-    <img alt="Pablo Vila" src="https://www.pablovila.com/public/pablovila.png" width="60" />
+    <img alt="Pablo Vila" src="https://www.pablovila.com/pablovila.png" width="60" />
   </a>
 </p>
 <h1 align="center">
