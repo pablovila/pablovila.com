@@ -3,7 +3,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
-import PvLogo from './images/PvLogo'
+import Image, { images } from './shared/Image'
 
 const offset = '96px'
 
@@ -12,7 +12,7 @@ const Header = () => (
     <div className="header-bar-container">
       <div className="logo-container">
         <AnchorLink className="link" offset={offset} href="#start">
-          <PvLogo />
+          <Image image={images.smallPv} />
         </AnchorLink>
       </div>
       <div className="nav-container">

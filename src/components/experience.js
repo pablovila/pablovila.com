@@ -4,16 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import AnimatedHeader from './shared/AnimatedHeader'
 import ExperienceItem from './shared/ExperienceItem'
 
-import CesineImage from './images/CesineImage'
-import CicImage from './images/CicImage'
-import EsriImage from './images/EsriImage'
-import UpvImage from './images/UpvImage'
-import YoungerImage from './images/YoungerImage'
+import Image, { images } from './shared/Image'
 
 const pabloExperience = [
   {
     date: 'Jan 2016 - Current',
-    photo: CicImage,
+    photo: () => <Image image={images.cic} />,
     title: (
       <>
         Senior Software Developer - <strong>CIC</strong>
@@ -41,7 +37,7 @@ const pabloExperience = [
   },
   {
     date: 'Jul 2018',
-    photo: EsriImage,
+    photo: () => <Image image={images.esri} />,
     title: (
       <>
         Web Application Developer Associate Certification -{' '}
@@ -59,7 +55,7 @@ const pabloExperience = [
   },
   {
     date: 'Jan 2013 - May 2013',
-    photo: UpvImage,
+    photo: () => <Image image={images.upv} />,
     title: (
       <>
         Android Programming - <strong>UPV</strong>
@@ -75,7 +71,7 @@ const pabloExperience = [
   },
   {
     date: 'May 2011 - Jul 2013',
-    photo: CesineImage,
+    photo: () => <Image image={images.cesine} />,
     title: (
       <>
         Java Programming - <strong>CESINE</strong>
@@ -92,7 +88,7 @@ const pabloExperience = [
   },
   {
     date: 'May 2011 - Jan 2016',
-    photo: YoungerImage,
+    photo: () => <Image image={images.youngerMe} />,
     title: (
       <span>
         Software Developer - <strong>CIC</strong>
